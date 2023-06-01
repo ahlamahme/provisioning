@@ -1,7 +1,5 @@
 ---
-- name: Deploy Terraform
-  hosts: all
-  gather_facts: False
+- hosts: all
   become: true
   roles:
-    - { role: terraform }
+    - role: redbeard28.terraform
